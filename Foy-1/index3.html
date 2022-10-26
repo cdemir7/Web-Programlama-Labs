@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" 
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+ 
+    <title>Soru3</title>
+  </head>
+ 
+<!--
+Yukarıda ilk olarak HTML ile sayfamızın iskeletini oluşturuyoruz. Daha sonra CSS ve Bootstrap ı ekliyoruz.
+lang etiketi ile sayfanın dilini, charset etiketi ile türkçe karakter kullanacağımızı bildiriyoruz.
+title etiketi ile sekmede bulunan başlığımızı ayarlıyoruz.
+-->
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About As</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#">Shop</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <span class="glyphicon glyphicon-search"></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!--
+        Yukarıda  sayfamızın en üstünde gözüken çubuğumuzu yani Navbarımızı oluşturuyoruz. İçerisine sayfamızın bazı bölümlerinin
+        sekmelerini buton şeklinde yerleştiriyoruz.
+      -->
+
+    <div class="container">
+        <img src="a2.jpg" class="img-responsive">
+    </div>
+    <!--
+      Yukarıda sayfamızın en üstünde yer alan resmimizi ekliyoruz. div ile bir blok yapısı oluşturuyoruz.
+      img etiketi ile resimimizi ekliyoruz. 
+    -->
+
+    <br> <br> <br>
+    <!--
+      Aşağıda ilk olarak bir container yapısı oluşturuyoruz. Daha sonra satır oluşturuyoruz bunu da  6 ya 6 olacak 
+      şekilde 2 tane sütuna bölüyoruz. 
+    -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="list-group col-md-6 bg-light">
+            <a href="#"><h3>All Cotegory</h3></a>
+            <a href="#" class="list-group-item list-group-item-actio">All items</a>
+            <a href="#" class="list-group-item list-group-item-actio">Sofas</a>
+            <a href="#" class="list-group-item list-group-item-actio">Tables</a>
+            <a href="#" class="list-group-item list-group-item-actio">Chairs</a>
+            <a href="#" class="list-group-item list-group-item-actio">Beds</a>
+            <a href="#" class="list-group-item list-group-item-actio">Mattresses</a>
+            <a href="#" class="list-group-item list-group-item-actio">Dining Tables</a>
+            <a href="#" class="list-group-item list-group-item-actio">Dining Chairs</a>
+          </div>
+        <!--
+          Yukarıda ilk listemizi oluşturuyoruz.
+        -->
+          <br> <br>
+          <div class="list-group col-md-6 bg-light">
+            <a href="#"><h3>Brands</h3></a>
+            <a href="#" class="list-group-item list-group-item-action">Cras justo odio</a>
+            <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+            <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
+            <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
+            <a href="#" class="list-group-item list-group-item-action">Vestibulum at eros</a>
+          </div>
+          <!--
+            İkinci listemiz
+        -->
+          <br> <br>
+          <div class="list-group col-md-6">
+            <img src="a3.jpg" class="h-100 w-100">
+          </div>
+          <!--
+            Sol altta bulunan resmimiz
+        -->
+          <br> <br>
+        </div>
+        <div class="col-md-6">
+          <div class="row">
+            <div>
+              <img src="a2.jpg" class="h-100 w-100"> 
+            </div>
+            <!--
+              Sağ üstte bulunan resmimiz
+        -->
+          </div>
+          <div class="row">
+            <div class="col-md-9">
+              <p>Our Latest Products</p>
+            </div>
+            <div class="dropdown bg-light col-md-3">
+              <button class="btn btn-bg-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" 
+              aria-haspopup="true" aria-expanded="false">
+                Featured
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div>
+          </div>
+          <!--
+            Cardlarımızın üstünde bulunan text imizi p etiketi ile dropdown umuzu da div etiketinin içerisinde buton şeklinde 
+            ekliyoruz.
+        -->
+          <div class="row mx-auto">
+            <div class="card-group">
+              <div class="card">
+                <img class="card-img-top" src="b1.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 clsass="card-title">Card title</h5>
+                  <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad soluta quisquam sed labore 
+                    ipsum neque sequi, eius laboriosam sunt vel assumenda omnis eaque explicabo accusantium temporibus ipsa! Cum, 
+                    vitae quia.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="b2.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title<span class="badge badge-secondary">Yeni</span></h5> <!--Burada başlığımızın yanına yeni simgesini ekledik.-->
+                  <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad soluta quisquam sed labore 
+                    ipsum neque sequi, eius laboriosam sunt vel assumenda omnis eaque explicabo accusantium temporibus ipsa! Cum, 
+                    vitae quia.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="b3.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad soluta quisquam sed labore 
+                    ipsum neque sequi, eius laboriosam sunt vel assumenda omnis eaque explicabo accusantium temporibus ipsa! Cum, 
+                    vitae quia.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+            </div>
+          </div>
+          <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-end">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <!--
+            Yukarıda sayfa geçişlerini sağlayabilmek amacıyla cardların altına sayfa geçişinde kullanacağımız butonumuzu ekliyoruz.
+          -->
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+    <div class="card bg-dark text-white">
+      <img src="a2.jpg" class="img-fluid" >
+      <div class="card-img-overlay">
+        <h1 class="card-title">Janae Randolph</h1>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis impedit sed qui in voluptate, architecto
+           eum, iusto eveniet eos iure numquam, incidunt provident! Molestias pariatur itaque ab saepe id voluptate.</p>
+      </div>
+    </div> 
+  </div>
+    <!--
+      Yukarıda resim üzerine textimizi ekliyoruz.
+    -->
+
+    <!--
+      Son olarak aşağıdaki kısımda da sayfanın bölümlerini sınıflandırılmış şekilde ekliyoruz.
+    -->
+    <div class="container mt-3">          
+      <table class="table">
+        <thead>
+          <tr>
+            <th>About Store</th>
+            <th>Brands</th>
+            <th>Categories</th>
+            <th>Support</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Home</td>
+            <td>Adsum</td>
+            <td>Single Sofa</td>
+            <td>GDPR</td>
+          </tr>
+          <tr>
+            <td>Shop</td>
+            <td>Albom</td>
+            <td>Sleeper Sofas</td>
+            <td>Cookie Policy</td>
+          </tr>
+          <tr>
+            <td>Product</td>
+            <td>And Wander</td>
+            <td>Accent Chairs</td>
+            <td>Terms</td>
+          </tr>
+          <tr>
+            <td>About Us</td>
+            <td>Arpenteur</td>
+            <td>Chairs-And-A-Half</td>
+            <td>Abuse Policy</td>
+          </tr>
+          <tr>
+            <td>Festival Offer</td>
+            <td>Eastlogue</td>
+            <td>Recliners</td>
+            <td>Privacy Policy</td>
+          </tr>
+          <tr>
+            <td>Contact Us</td>
+            <td>Gitman Vintage</td>
+            <td>Swivels Gliders</td>
+            <td>Contact Us</td>
+          </tr>
+          <tr>
+            <td>Login</td>
+            <td>Lody White Co</td>
+            <td>Loveseats</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    
+    <meta charset="UTF-8">
+    <!--Yukarıdaki kod satırı ile türkçe karakter sorununu hallediyoruz.-->
+    <title>Soru2</title> <!--Sekmede gözüken ismimizi ayarlıyoruz.-->
+
+    <style>
+        .dikey-menu{
+            width:180px; /*Yanda açılır menümüzün yatayda boyutunu belirliyoruz.*/
+        }
+        .dikey-menu ul{  /*Burada yanda açılan seçeneklerin genişliğini width ile margin ve padding ile nerede 
+                        bulunması gerektiğini ve list-style-type ile de varsayılan olarak gelmiş liste tipini kaldırıyoruz.*/
+            width:180px;
+            margin:0;
+            padding:0;
+            list-style-type:none;   
+        }
+        .dikey-menu li{ /*Burada yanda açılan seçenekelerin yerlerini normal olarak ayarlıyoruz.*/ 
+            position: relative;
+        }
+        .dikey-menu li ul{ /*Burada listenin yandan açılma zelliğini ekliyoruz.*/
+            position:absolute; /*Buradaki eleman en yakın pozisyon değeri relative olan elemana göre kendini konumlandırır*/
+            list-style-type:none; /*Varsayılan olarak gelmiş liste tipini kaldırıyoruz.*/
+            left:179px;  /*Bu iki satırda sayfadaki konumunu ve genişliğini ayarlıyoruz.*/
+            width:180px;
+            display:none; /*Burada listenin içeriğinin görünmemesini sağlıyoruz.*/
+            top:0;    
+        }
+        .dikey-menu li a{ 
+            height:30px; /*Menümüzün dikey boyutunu ayarlıyoruz. */
+            display: block; /*Burada menümüzün block şeklinde durmasını sağlıyoruz.*/
+            text-decoration: none; /*Burada elemanlardaki yazının altındaki çizgiyi siliyoruz.*/
+            background-color: brown; /*Elemanların bulunduğu kutuların arkaplan rengini belirliyoruz.*/
+            color:#FFF; /*Yazıların rengini belirliyoruz.*/
+            font:500 15px medium; /*Yazı büyüklüğünü ve fontunu değiştiriyoruz.*/
+            padding:5px; /*Kutucukların büyüklüğünü belirliyoruz.*/
+            border:2px solid #FFF;
+            border-bottom:0; 
+            text-align: center;
+            line-height: 30px; /*Yazıların kutucuğa göre yerini belirliyoruz.*/
+        }
+        .dikey-menu li a:hover{ /*Burada ilk olarak arkaplan rengini ve  elemanın üzerine geldiğimizde renk değişimini sağlıyoruz.*/
+            background-color: deepskyblue;
+            color: navy;
+        }
+        .dikey-menu li:hover ul{ /*Açılır pencereleri buradan ayarlıyoruz.*/
+            display:block;
+        }
+    </style>
+
+</head>
+<body> <!--Burada listemizin iskeletini oluşturup görünen ismini verip tıklandığında gideceği linkleri belirliyoruz.-->
+    
+    <div class="dikey-menu">
+        <li><a href="https://bil-muhendislik.omu.edu.tr/tr">Anasayfa</a></li>
+        <li><a href="">Hakkımızda</a>
+            <ul>
+                <li><a href="https://bil-muhendislik.omu.edu.tr/tr/hakkimizda/bolumumuz">Bölümümüz</a></li>
+                <li><a href="https://bil-muhendislik.omu.edu.tr/tr/hakkimizda/yonetim">Yönetim</a></li>
+                <li><a href="https://bil-muhendislik.omu.edu.tr/tr/hakkimizda/komisyonlar">Komisyonlar</a></li>
+            </ul>
+        </li>
+        <li><a href="">Personel</a>
+            <ul>
+                <li><a href="https://bil-muhendislik.omu.edu.tr/tr/personel/ogretim-uyeleri">Öğretim Üyeleri</a></li>
+                <li><a href="https://bil-muhendislik.omu.edu.tr/tr/personel/arastirma-gorevlileri">Araştırma Görevlileri</a></li>
+            </ul>
+        </li>
+        <li><a href="">Eğitim</a>
+            <ul>
+                <li><a href="https://bil-muhendislik.omu.edu.tr/tr/egitim/lisans">Lisans</a></li>
+                <li><a href="https://bil-muhendislik.omu.edu.tr/tr/egitim/yuksek-lisans">Yüksek Lisans</a></li>
+                <li><a href="https://bil-muhendislik.omu.edu.tr/tr/egitim/doktora">Doktora</a></li>
+                <li><a href="https://bil-muhendislik.omu.edu.tr/tr/egitim/laboratuvarlar">Laboratuvarlar</a></li>
+            </ul>    
+        </li>
+        <li><a href="https://unikys.omu.edu.tr/tr/feedbacks/new">İletişim</a></li>
+    </div>
+
+</body>
+</html>

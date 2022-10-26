@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"> <!--Türkçe alfebenin kullanılmasını sağlıyor.-->
+    <title>Soru1</title> <!--Sekmede bulunan adı gösterir.-->
+    <!--border etiketi ile tablomuza çerçeve ekledik. -->
+    <!--background-color ile tablomuzun arkaplan rengini ayarlıyoruz.-->
+    <!--border-color etiketi ile kenarlık rengini değiştiriyoruz.-->
+    <style>
+
+        #ders{
+            margin:0 auto; /*Alt ve üst boşluk 0 yaparız ve eğer div in bir genişlik değeri varsa sağ ve sol boşluklar auto olursa ortalanır.*/
+	        display:table;  /*Buradaki satırda tablomuzu dikey olarak ortalıyoruz.*/       
+        }
+        table, th, td {
+            border: 2px solid black;
+            border-color: lightseagreen;
+            border-radius: 5px;
+            background-color: snow;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div id="ders">
+        <table> <!--Tablomuzu oluşturuyoruz.-->
+            <!--Burada tr satırları gösterir.-->
+            <!--th başlık sütunları gösterir.Buradaki başlıklar kalın yazılmıştır ve ortalanmıştır.-->
+            <!--Sutünlar da td etiketi ile gösterilir. -->
+            <!--caption etiketi ile de tablomuza başlığını verdik.-->
+            <!--border etiketi ile tablomuza çerçeve ekledik. -->
+            
+            <caption>Ders Programı</caption>
+            <tr> 
+                <th>Ders No</th>
+                <th>Ders Adı</th>
+                <th>Ders Sorumlusu</th>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>Web Programlama Lab</td>
+                <td>İsmail İşeri</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Bilgisayar Ağları</td>
+                <td>Sercan Demirci</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>Yazılım Mühendisliği</td>
+                <td>Durmuş Özkan Şahin</td>
+            </tr>
+
+        </table>
+    </div>
+</body>
+</html>
