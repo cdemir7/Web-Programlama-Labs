@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Föy-2</title>
+</head>
+
+<body>
+
+  <p id="test"></p> <!---->
+
+  <script>
+    function Main_function(id) { // Tıklama olduğunda çalışacak fonksiyon
+      var xhttp = new XMLHttpRequest(); // Yeni bir nesne oluştur ve xhttp değişkenine ata.
+      // Herhangi bir değişiklik olduğunda yani sunucudan bir veri istediğinde bunu algıla ve bu fonksiyonu çalıştır.
+      xhttp.onreadystatechange = function() {  
+        // Olası hataları engellemek için if bloğu kullanılır. Sunucunun yanıt vermeye hazır olduğu durumdur.
+        if (this.readyState == 4 && this.status == 200){
+          // Aşağıda oluşturduğumuz fonksiyonda this parametresi oluştruduğumuz 
+          // xhttp değişkenini id değeride hangi satıra dokunduğumuzu belirliyoruz.
+          yazdir(this,id);
+        }
+      };
+      //24. satırda sunucu cevap verip 25. satırda cevabı gönderdi.
+      xhttp.open("GET", "kisi.xml", true);
+      xhttp.send();
+    }
+
+    // Bu fonksiyon gelen değer ile ekrana yazdırmak için kullanacağız.
+    function yazdir(nesne, id) {
+      // Verilerin cevabı xml formatında alacağım.
+      var xmlDoc = nesne.responseXML;
+      var tablom = "";
+      // XML içinde bütün  kisi değerlerine ulaşıp x değişkenine hepsi atandı.
+      var x = xmlDoc.getElementsByTagName("kisi");
+      // Kişinin özelliklerinin ayrıntılarını liste halinde ekrana bastır.
+      tablom += "<ul><li>" +  "AdıSoyadı : " + x[id].getElementsByTagName("adsoyad")[0].childNodes[0].nodeValue + "</li>" 
+      + "<br>" + 
+      "<li>" + "Numara : " + x[id].getElementsByTagName("numara")[0].childNodes[0].nodeValue + "</li>" 
+      + "<br>" + 
+      "<li>" + "Sınıfı : " + x[id].getElementsByTagName("sinif")[0].childNodes[0].nodeValue + "</li>"
+      + "<br>" + 
+      "<li>" + "Bölümü : " + x[id].getElementsByTagName("bolum")[0].childNodes[0].nodeValue + "</li>"
+      + "<br>"
+      // test id li paragrafın içine innerHTML ile tablom değişkenine yazdır. 
+      document.querySelector("#test").innerHTML = tablom;
+      }
+
+  </script>
+
+<!--Ekranda gösterilen tablo oluşturuldu. Main_function ile tıklandığında fonksiyonun çalışması sağlandı.-->
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Adı Soyadı</th>
+        <th>Numara</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr onclick="Main_function(0)">
+        <td>Ahmet Atak</td>
+        <td>12345678</td>
+      </tr>
+      <tr onclick="Main_function(1)">
+        <td>Ali Vanlı</td>
+        <td>22223456</td>
+      </tr>
+      <tr onclick="Main_function(2)">
+        <td>Arda Çalışkan</td>
+        <td>78906543</td>
+      </tr>
+      <tr onclick="Main_function(3)">
+        <td>Kerem Taşçı</td>
+        <td>65432890</td>
+      </tr>
+    </tbody>
+
+  </table>
+
+</body>
+
+</html>

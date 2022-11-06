@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<catalog>
+
+    <kisi>
+        <adsoyad>Ahmet Atak</adsoyad>
+        <numara>12345678</numara>
+        <sinif>4</sinif>
+        <bolum>Bilgisayar Mühendisliği</bolum>
+    </kisi>  
+
+    <kisi>
+        <adsoyad>Ali Vanlı</adsoyad>
+        <numara>22223456</numara>
+        <sinif>2</sinif>
+        <bolum>Harita Mühendisliği</bolum>
+    </kisi>
+
+    <kisi>
+        <adsoyad>Arda Çalışkan</adsoyad>
+        <numara>78906543</numara>
+        <sinif>1</sinif>
+        <bolum>Kimya Mühendisliği</bolum>
+    </kisi>
+
+    <kisi>
+        <adsoyad>Kerem Taşçı</adsoyad>
+        <numara>65432890</numara>
+        <sinif>3</sinif>
+        <bolum>Endüstri Mühendisliği</bolum>
+    </kisi>
+
+</catalog>
